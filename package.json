@@ -1,6 +1,13 @@
 {
   "license": "MIT",
   "private": true,
+  "description": "GraphQL API with Yoga and Nexus on Vercel serverless functions",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "generate": "ts-node --transpile-only graphql/schema.ts"
+  },
   "dependencies": {
     "graphql": "^16.11.0",
     "graphql-yoga": "^5.13.4",
@@ -9,6 +16,11 @@
   "devDependencies": {
     "@types/node": "22.15.19",
     "@vercel/node": "5.1.16",
-    "typescript": "5.8.3"
+    "@vitest/ui": "^3.1.4",
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "5.8.3",
+    "vitest": "^3.1.4"
   }
 }
